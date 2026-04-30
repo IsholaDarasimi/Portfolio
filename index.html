@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishola Darasimi — Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <!-- ============================================
+         NAVIGATION
+         ============================================ -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="#" class="nav-logo">Ishola Darasimi </a>
+            
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <a href="#contact" class="nav-cta">Let's Talk</a>
+
+            <button class="mobile-menu-btn" id="menuBtn" aria-label="Open menu">
+                <i data-lucide="menu" style="width: 20px; height: 20px;"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" id="menuClose" aria-label="Close menu">
+            <i data-lucide="x" style="width: 32px; height: 32px;"></i>
+        </button>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#services" class="mobile-link">Services</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section class="hero" id="home">
+        <div class="hero-bg-shapes">
+            <div class="hero-shape hero-shape-1"></div>
+            <div class="hero-shape hero-shape-2"></div>
+            <div class="hero-shape hero-shape-3"></div>
+        </div>
+        <div class="hero-grid"></div>
+
+        <div class="hero-content">
+            <div class="hero-label">
+                Available for freelance work
+            </div>
+            <h1 class="hero-title">
+                Digital experiences<br>
+                built for <span>impact, performance and growth</span>
+            </h1>
+            <p class="hero-subtitle">
+                Web Developer & Technical Instructor focused on building high-performing websites and teaching practical digital skills.
+            </p>
+            <div class="hero-cta-group">
+                <a href="#projects" class="btn btn-primary">
+                    <i data-lucide="briefcase" style="width: 18px; height: 18px;"></i>
+                    View Projects
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i data-lucide="mail" style="width: 18px; height: 18px;"></i>
+                    Contact Me
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <i data-lucide="chevron-down" style="width: 20px; height: 20px;"></i>
+        </div>
+    </section>
+
+    <!-- ============================================
+         ABOUT SECTION
+         ============================================ -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visual reveal">
+                    <div class="about-image-wrapper">
+                        <img src="images/Profile.jpeg" 
+                             alt="Alex Morgan - Frontend Developer" 
+                             class="about-image">
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">Years Exp.</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">8+</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">Partner Schools</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-content reveal reveal-delay-2">
+                    <div class="section-label">About Me</div>
+                    <p>
+I build digital products that are fast, functional, and genuinely enjoyable to use. As a Web Developer, I focus on creating clean, responsive, and high-performing websites that not only look good, but deliver real results.
+</p>
+
+<p>
+Beyond development, I work as a Technical Instructor, helping others understand and apply core IT and web development concepts in a practical way. I enjoy breaking down complex ideas into simple, usable knowledge that actually sticks.
+</p>
+
+<p>
+My approach combines technical precision with a strong sense of user experience. I don’t just write code — I solve problems, refine user journeys, and build products that make an impact. Whether working on personal projects or helping others grow their skills, my goal is always the same: create value through technology.
+</p>
+                    <div class="about-tags">
+                        <span class="about-tag">Wordpress</span>
+                        <span class="about-tag">PHP</span>
+                        <!-- <span class="about-tag"></span> -->
+                        <span class="about-tag">Performance</span>
+                        <span class="about-tag">Accessibility</span>
+                        <span class="about-tag">Clean Code</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SKILLS SECTION
+         ============================================ -->
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">Expertise</div>
+                <h2 class="section-title">Technical Proficiency</h2>
+                <p class="section-desc">
+                   A modern web development stack focused on building fast, scalable, and user-friendly websites
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- HTML -->
+                <div class="skill-card reveal">
+                    <div class="skill-icon">
+                        <i data-lucide="code-2" style="width: 24px; height: 24px;"></i>
+                    </div>
+                    <h3 class="skill-name">HTML5 & Semantic Markup</h3>
+                    <p class="skill-desc">Clean, accessible, and SEO-optimized markup that forms the foundation of every project.</p>
+                    <div class="skill-level">
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" data-width="95"></div>
+                        </div>
+                        <div class="skill-percent">95%</div>
+                    </div>
+                </div>
+
+                <!-- CSS -->
+                <div class="skill-card reveal reveal-delay-1">
+                    <div class="skill-icon">
+                        <i data-lucide="palette" style="width: 24px; height: 24px;"></i>
+                    </div>
+                    <h3 class="skill-name">CSS3 & Modern Styling</h3>
+                    <p class="skill-desc">Modern, responsive UI development using Flexbox, Grid, animations, and scalable design systems.</p>
+                    <div class="skill-level">
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" data-width="92"></div>
+                        </div>
+                        <div class="skill-percent">92%</div>
+                    </div>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="skill-card reveal reveal-delay-2">
+                    <div class="skill-icon">
+                        <i data-lucide="layers" style="width: 24px; height: 24px;"></i>
+                    </div>
+                    <h3 class="skill-name">WordPress Development</h3>
+                    <p class="skill-desc">Custom themes, plugin customization, and dynamic website development using WordPress and PHP.</p>
+                    <div class="skill-level">
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" data-width="90"></div>
+                        </div>
+                        <div class="skill-percent">90%</div>
+                    </div>
+                </div>
+
+                <!-- Responsive -->
+                <div class="skill-card reveal">
+                    <div class="skill-icon">
+                        <i data-lucide="smartphone" style="width: 24px; height: 24px;"></i>
+                    </div>
+                    <h3 class="skill-name">Responsive Design</h3>
+                    <p class="skill-desc">Adaptive layouts that ensure smooth and consistent user experience across mobile, tablet, and desktop devices.  </p>
+                    <div class="skill-level">
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" data-width="94"></div>
+                        </div>
+                        <div class="skill-percent">94%</div>
+                    </div>
+                </div>
+
+                <!-- Git -->
+                <div class="skill-card reveal reveal-delay-1">
+                    <div class="skill-icon">
+                        <i data-lucide="graduation-cap" style="width: 24px; height: 24px;"></i>
+                    </div>
+                    <h3 class="skill-name">Technical Instruction & Mentorship</h3>
+                    <p class="skill-desc">Delivering structured IT and web development training, simplifying complex concepts into practical.</p>
+                    <div class="skill-level">
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" data-width="88"></div>
+                        </div>
+                        <div class="skill-percent">88%</div>
+                    </div>
+                </div>
+
+                <!-- React -->
+                <div class="skill-card reveal reveal-delay-2">
+                    <div class="skill-icon">
+                        <i data-lucide="layers" style="width: 24px; height: 24px;"></i>
+                    </div>
+                    <h3 class="skill-name">PHP Development</h3>
+                    <p class="skill-desc">Server-side logic, WordPress customization, and database-driven functionality.</p>
+                    <div class="skill-level">
+                        <div class="skill-bar-bg">
+                            <div class="skill-bar-fill" data-width="85"></div>
+                        </div>
+                        <div class="skill-percent">85%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         PROJECTS SECTION
+         ============================================ -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">Portfolio</div>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-desc">
+                    Real-world solutions built with attention to detail, performance, and user experience.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card reveal">
+                    <div class="project-image-wrapper">
+                        <img src="images/TechXplore.jpeg" 
+                             alt="Analytics Dashboard" 
+                             class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-tech-stack">
+                                <span class="project-tech-tag">Public Speaking</span>
+                                <span class="project-tech-tag">Education</span>
+                                <span class="project-tech-tag">Mentorship</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">TechXplore Conference</div>
+                        <h3 class="project-title">Web Development speaker</h3>
+                        <p class="project-problem">
+                             Delivered a talk on “Getting Started in Web Development: A Beginner’s Perspective” at the TechXplore Conference held at MFM Youth Church, Maya. 
+                        </p>
+                        <div class="project-actions">
+                            <a href="#" class="project-btn project-btn-primary">
+                                <i data-lucide="external-link" style="width: 16px; height: 16px;"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" class="project-btn project-btn-secondary">
+                                <i data-lucide="github" style="width: 16px; height: 16px;"></i>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card reveal reveal-delay-1">
+                    <div class="project-image-wrapper">
+                        <img src="images/Ebook.png" 
+                             alt="E-commerce Platform" 
+                             class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-tech-stack">
+                                <span class="project-tech-tag">PHP</span>
+                                <span class="project-tech-tag">MySql</span>
+                                <span class="project-tech-tag">Paystack</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">E-Commerce</div>
+                        <h3 class="project-title">E-Book Sales Platform for Lecturers</h3>
+                        <p class="project-problem">
+                            The system simplifies the distribution process, making it easier for students to access academic materials while providing lecturers with a structured way to manage and promote their content.
+                        </p>
+                        <div class="project-actions">
+                            <a href="#" class="project-btn project-btn-primary">
+                                <i data-lucide="external-link" style="width: 16px; height: 16px;"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" class="project-btn project-btn-secondary">
+                                <i data-lucide="github" style="width: 16px; height: 16px;"></i>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card reveal">
+                    <div class="project-image-wrapper">
+                        <img src="images/Delish FIngers.png" 
+                             alt="Finance App" 
+                             class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-tech-stack">
+                                <span class="project-tech-tag">HTML</span>
+                                <span class="project-tech-tag">Tailwind</span>
+                                <span class="project-tech-tag">Responsive</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Digital Menu Platform</div>
+                        <h3 class="project-title">Delish Fingers Kitchen</h3>
+                        <p class="project-problem">
+                            Developed a responsive digital menu platform that enhances user experience by organizing menu items clearly and providing intuitive, easy navigation across all devices.
+                        </p>
+                        <div class="project-actions">
+                            <a href="#" class="project-btn project-btn-primary">
+                                <i data-lucide="external-link" style="width: 16px; height: 16px;"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" class="project-btn project-btn-secondary">
+                                <i data-lucide="github" style="width: 16px; height: 16px;"></i>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card reveal reveal-delay-1">
+                    <div class="project-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=500&fit=crop" 
+                             alt="Agency Website" 
+                             class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-tech-stack">
+                                <span class="project-tech-tag">HTML5</span>
+                                <span class="project-tech-tag">GSAP</span>
+                                <span class="project-tech-tag">Sass</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Corporate Site</div>
+                        <h3 class="project-title">Vertex Agency</h3>
+                        <p class="project-problem">
+                            A high-impact creative agency website with immersive scroll animations, case study showcases, and a conversion-optimized contact funnel.
+                        </p>
+                        <div class="project-actions">
+                            <a href="#" class="project-btn project-btn-primary">
+                                <i data-lucide="external-link" style="width: 16px; height: 16px;"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" class="project-btn project-btn-secondary">
+                                <i data-lucide="github" style="width: 16px; height: 16px;"></i>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SERVICES SECTION
+         ============================================ -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">What I Do</div>
+                <h2 class="section-title">Services</h2>
+                <p class="section-desc">
+                    End-to-end frontend solutions tailored to your business goals and user needs.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon-wrapper">
+                        <i data-lucide="layout" style="width: 28px; height: 28px;"></i>
+                    </div>
+                    <h3 class="service-title">Web Development</h3>
+                    <p class="service-desc">
+Custom website development using modern technologies, focused on performance, responsiveness, and clean user experience.                    </p>
+                </div>
+
+                <div class="service-card reveal reveal-delay-1">
+                    <div class="service-icon-wrapper">
+                        <i data-lucide="layers" style="width: 28px; height: 28px;"></i>
+                    </div>
+                    <h3 class="service-title">Wordpress Development</h3>
+                    <p class="service-desc">
+Building and customizing WordPress websites with dynamic functionality, user-friendly content management, and scalable structure.                    </p>
+                </div>
+
+                <div class="service-card reveal reveal-delay-2">
+                    <div class="service-icon-wrapper">
+                        <i data-lucide="graduation-cap" style="width: 28px; height: 28px;"></i>
+                    </div>
+                    <h3 class="service-title">IT Training & Mentorship</h3>
+                    <p class="service-desc">
+Providing structured training in web development and IT fundamentals, focused on practical skills and real-world application.
+</p>                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CONTACT SECTION
+         ============================================ -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-content reveal">
+                    <div class="contact-label">Get In Touch</div>
+                    <h2 class="contact-title">Let's work together</h2>
+                    <p class="contact-desc">
+                        Have a project in mind? I'm currently available for freelance work and open to new opportunities. Let's discuss how I can help bring your vision to life.
+                    </p>
+
+                    <div class="contact-methods">
+                        <a href="mailto:hello@alexmorgan.dev" class="contact-method">
+                            <div class="contact-method-icon">
+                                <i data-lucide="mail" style="width: 20px; height: 20px;"></i>
+                            </div>
+                            <div class="contact-method-info">
+                                <span class="contact-method-label">Email</span>
+                                <span class="contact-method-value">isholadarasimi552@gmailcom</span>
+                            </div>
+                        </a>
+
+                        <a href="https://wa.me/1234567890" class="contact-method" target="_blank">
+                            <div class="contact-method-icon">
+                                <i data-lucide="message-circle" style="width: 20px; height: 20px;"></i>
+                            </div>
+                            <div class="contact-method-info">
+                                <span class="contact-method-label">WhatsApp</span>
+                                <span class="contact-method-value">+234 912 859 1655</span>
+                            </div>
+                        </a>
+
+                        <a href="#" class="contact-method">
+                            <div class="contact-method-icon">
+                                <i data-lucide="map-pin" style="width: 20px; height: 20px;"></i>
+                            </div>
+                            <div class="contact-method-info">
+                                <span class="contact-method-label">Location</span>
+                                <span class="contact-method-value">Remote / Worldwide</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper reveal reveal-delay-2">
+                    <form id="contactForm" onsubmit="event.preventDefault();">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Your Name</label>
+                            <input type="text" id="name" class="form-input" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email Address</label>
+                            <input type="email" id="email" class="form-input" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-input" placeholder="Project Inquiry" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="message">Message</label>
+                            <textarea id="message" class="form-textarea" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">
+                            Send Message
+                            <i data-lucide="send" style="width: 18px; height: 18px;"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a href="#" class="footer-brand">Ishola Darasimi</a>
+            
+            <p class="footer-copy">© 2025 Ishola Darasimi. All rights reserved.</p>
+            
+            <div class="footer-socials">
+                <a href="#" class="footer-social" aria-label="GitHub">
+                    <i data-lucide="github" style="width: 18px; height: 18px;"></i>
+                </a>
+                <a href="#" class="footer-social" aria-label="LinkedIn">
+                    <i data-lucide="linkedin" style="width: 18px; height: 18px;"></i>
+                </a>
+                <a href="#" class="footer-social" aria-label="Twitter">
+                    <i data-lucide="twitter" style="width: 18px; height: 18px;"></i>
+                </a>
+                <a href="#" class="footer-social" aria-label="Dribbble">
+                    <i data-lucide="dribbble" style="width: 18px; height: 18px;"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         JAVASCRIPT
+         ============================================ -->
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // ============================================
+        // NAVBAR SCROLL EFFECT
+        // ============================================
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // ============================================
+        // MOBILE MENU
+        // ============================================
+        const menuBtn = document.getElementById('menuBtn');
+        const menuClose = document.getElementById('menuClose');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
+        menuClose.addEventListener('click', toggleMenu);
+        
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', toggleMenu);
+        });
+
+        // ============================================
+        // SCROLL REVEAL ANIMATION
+        // ============================================
+        const revealElements = document.querySelectorAll('.reveal');
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    
+                    // Animate skill bars if present
+                    const skillBars = entry.target.querySelectorAll('.skill-bar-fill');
+                    skillBars.forEach(bar => {
+                        const width = bar.getAttribute('data-width');
+                        setTimeout(() => {
+                            bar.style.width = width + '%';
+                        }, 200);
+                    });
+                    
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // ============================================
+        // SMOOTH SCROLL FOR ANCHOR LINKS
+        // ============================================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offset = 80;
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // ============================================
+        // CONTACT FORM HANDLER
+        // ============================================
+        const contactForm = document.getElementById('contactForm');
+        
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const btn = this.querySelector('.form-submit');
+            const originalText = btn.innerHTML;
+            
+            btn.innerHTML = '<span>Message Sent!</span>';
+            btn.style.background = '#22c55e';
+            
+            setTimeout(() => {
+                btn.innerHTML = originalText;
+                btn.style.background = '';
+                this.reset();
+            }, 3000);
+        });
+
+        // ============================================
+        // ACTIVE NAV LINK HIGHLIGHTING
+        // ============================================
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.style.color = '';
+                if (link.getAttribute('href') === '#' + current) {
+                    if (!navbar.classList.contains('scrolled')) {
+                        link.style.color = 'white';
+                    } else {
+                        link.style.color = 'var(--blue-700)';
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
